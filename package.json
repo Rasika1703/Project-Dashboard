@@ -12,7 +12,8 @@
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watch",
     "migrate": "node server/db/migrate.js",
-    "seed": "node server/db/seed.js"
+    "seed": "node server/db/seed.js",
+    "start": "tsx server/index.ts"
   },
   "keywords": [
     "dashboard",
