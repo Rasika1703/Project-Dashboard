@@ -1,0 +1,14 @@
+node_modules/
+.env
+dist/
+build/
+*.log
+.DS_Store
+coverage/
+.vscode/
+.idea/
+client/node_modules/
+client/dist/
+client/.env
+
+cookies.txt
