@@ -8,12 +8,14 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "tsx watch server/index.ts",
     "client": "cd client && npm run dev --host",
-    "build": "cd client && npm run build",
+    "build": "npm run build:server && npm run build:client",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watch",
     "migrate": "node server/db/migrate.js",
     "seed": "node server/db/seed.js",
-    "start": "tsx server/index.ts"
+    "start": "node dist/index.js",
+    "build:server": "tsc",
+    "build:client": "cd client && npm run build"
   },
   "keywords": [
     "dashboard",
